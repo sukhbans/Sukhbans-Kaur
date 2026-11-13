@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Prince Koundal | Software Engineer, Developer and AI/ML Enthusiast">
+  <title>Prince Koundal | Developer Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #080808;
+      color: #f5f5f5;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 25px 8%;
+      border-bottom: 1px solid #292929;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #d4af37;
+    }
+
+    nav a {
+      color: #ddd;
+      text-decoration: none;
+      margin-left: 25px;
+    }
+
+    nav a:hover {
+      color: #d4af37;
+    }
+
+    .hero {
+      min-height: 85vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 80px 10%;
+    }
+
+    .hero h1 {
+      font-size: clamp(45px, 8vw, 85px);
+      line-height: 1.1;
+      margin: 20px 0;
+    }
+
+    .gold {
+      color: #d4af37;
+    }
+
+    .hero p {
+      color: #aaa;
+      max-width: 650px;
+      font-size: 18px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 25px;
+      border: 1px solid #d4af37;
+      color: #d4af37;
+      text-decoration: none;
+      width: fit-content;
+      transition: .3s;
+    }
+
+    .btn:hover {
+      background: #d4af37;
+      color: #080808;
+    }
+
+    section {
+      padding: 80px 10%;
+    }
+
+    section h2 {
+      font-size: 35px;
+      margin-bottom: 25px;
+    }
+
+    .about p {
+      color: #aaa;
+      max-width: 800px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .skills span {
+      border: 1px solid #333;
+      padding: 12px 22px;
+      color: #d4af37;
+      border-radius: 5px;
+    }
+
+    .project {
+      padding: 25px;
+      border: 1px solid #333;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+
+    .project p {
+      color: #aaa;
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      border-top: 1px solid #292929;
+      color: #777;
+    }
+
+    @media(max-width: 600px) {
+      header {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav a {
+        margin: 0 8px;
+        font-size: 13px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">PK.</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <p class="gold">HELLO, WORLD! I'M</p>
+      <h1>Prince <span class="gold">Koundal.</span></h1>
+      <h2>Software Engineer | Developer | AI/ML Enthusiast</h2>
+      <p>
+        Building technology, solving problems and turning ideas
+        into impactful products. Exploring software engineering,
+        artificial intelligence and open source.
+      </p>
+      <a class="btn" href="#projects">EXPLORE MY WORK →</a>
+    </div>
+
+    <section id="about" class="about">
+      <h2>About <span class="gold">Me.</span></h2>
+      <p>
+        I'm a Computer Science and Engineering student specializing
+        in Artificial Intelligence and Machine Learning. I'm passionate
+        about software development, competitive programming,
+        innovation and building meaningful technology.
+        I also serve as General Secretary and Co-Founder of ProX.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Technical <span class="gold">Skills.</span></h2>
+      <div class="skills">
+        <span>C++</span>
+        <span>Python</span>
+        <span>Java</span>
+        <span>DSA</span>
+        <span>AI/ML</span>
+        <span>Git & GitHub</span>
+        <span>HTML & CSS</span>
+        <span>RAG</span>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Featured <span class="gold">Projects.</span></h2>
+
+      <div class="project">
+        <h3>IGNITIO</h3>
+        <p>
+          A gamified internship-readiness platform designed
+          to help engineering students develop industry skills.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>AI Detection Framework</h3>
+        <p>
+          Exploring AI-powered text and file authenticity detection.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>Robotics & Drone Simulation</h3>
+        <p>
+          Working with ROS and drone simulation environments.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Let's <span class="gold">Connect.</span></h2>
+      <p>Have an idea? Let's build something impactful.</p>
+      <a class="btn" href="https://github.com/YOUR_USERNAME">
+        GitHub →
+      </a>
+      <a class="btn" href="https://linkedin.com/in/YOUR_USERNAME">
+        LinkedIn →
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Prince Koundal. Built with passion.
+  </footer>
+
+</body>
+</html>
