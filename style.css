@@ -1,0 +1,316 @@
+
+/* =================================
+   PRINCE KOUNDAL - DEVELOPER PORTFOLIO
+   Theme: Black | White | Gold
+================================= */
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --background: #080808;
+    --secondary: #111111;
+    --gold: #d4af37;
+    --white: #f5f5f5;
+    --gray: #999999;
+    --border: #292929;
+}
+
+body {
+    background: var(--background);
+    color: var(--white);
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* NAVIGATION */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    background: rgba(8, 8, 8, 0.95);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 800;
+    color: var(--gold);
+    letter-spacing: 2px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--gold);
+}
+
+/* HERO SECTION */
+.hero {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 10%;
+    position: relative;
+    background:
+        radial-gradient(
+            circle at 80% 40%,
+            rgba(212, 175, 55, 0.08),
+            transparent 35%
+        );
+}
+
+.hero > p:first-child {
+    color: var(--gold);
+    letter-spacing: 5px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: clamp(45px, 8vw, 90px);
+    line-height: 1.1;
+    margin: 20px 0;
+    font-weight: 800;
+}
+
+.gold {
+    color: var(--gold);
+}
+
+.hero h2 {
+    font-size: clamp(18px, 3vw, 28px);
+    margin-bottom: 15px;
+    color: #dddddd;
+}
+
+.hero p {
+    color: var(--gray);
+    max-width: 650px;
+    font-size: 17px;
+}
+
+/* BUTTONS */
+.btn {
+    display: inline-block;
+    margin-top: 30px;
+    margin-right: 12px;
+    padding: 13px 27px;
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    width: fit-content;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: var(--gold);
+    color: #080808;
+    transform: translateY(-4px);
+    box-shadow: 0 5px 25px rgba(212, 175, 55, 0.2);
+}
+
+/* GENERAL SECTIONS */
+section {
+    padding: 100px 10%;
+}
+
+section h2 {
+    font-size: clamp(30px, 5vw, 42px);
+    margin-bottom: 30px;
+    font-weight: 800;
+}
+
+section p {
+    color: var(--gray);
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+/* ABOUT */
+.about {
+    background: var(--secondary);
+}
+
+.about p {
+    max-width: 850px;
+}
+
+/* SKILLS */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skills span {
+    border: 1px solid var(--border);
+    padding: 12px 25px;
+    color: var(--gold);
+    border-radius: 4px;
+    background: #101010;
+    transition: 0.3s ease;
+    cursor: default;
+}
+
+.skills span:hover {
+    border-color: var(--gold);
+    transform: translateY(-5px);
+    background: #1b190f;
+}
+
+/* PROJECTS */
+#projects {
+    background: var(--secondary);
+}
+
+.project {
+    padding: 30px;
+    border: 1px solid var(--border);
+    margin-bottom: 22px;
+    border-radius: 7px;
+    background: #0c0c0c;
+    transition: 0.3s ease;
+}
+
+.project h3 {
+    color: var(--gold);
+    font-size: 22px;
+}
+
+.project p {
+    margin-top: 12px;
+}
+
+.project:hover {
+    border-color: var(--gold);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* CONTACT */
+#contact {
+    text-align: center;
+}
+
+#contact p {
+    margin-bottom: 10px;
+}
+
+#contact .btn {
+    margin-top: 25px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px 15px;
+    border-top: 1px solid var(--border);
+    color: #777777;
+    font-size: 13px;
+    background: #050505;
+}
+
+/* SELECTION */
+::selection {
+    background: var(--gold);
+    color: #000;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #080808;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--gold);
+    border-radius: 10px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 18px;
+        padding: 20px 5%;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .hero {
+        min-height: 75vh;
+        padding: 60px 7%;
+    }
+
+    section {
+        padding: 70px 7%;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .skills {
+        gap: 10px;
+    }
+
+    .skills span {
+        padding: 10px 16px;
+        font-size: 13px;
+    }
+
+    .project {
+        padding: 22px;
+    }
+}
+
+@media (max-width: 400px) {
+    nav {
+        gap: 10px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .btn {
+        padding: 11px 18px;
+    }
+}
